@@ -7,6 +7,7 @@ import { subtract } from '@repo/math/subtract'
 export default function Home() {
   return (
     <div className={styles.page}>
+      <h1>WEB (APPLICATION)</h1>
       <main className={styles.main}>
         <div>@repo/math/add : {add(1, 2)}</div>
         <div>@repo/math/subtract : {subtract(1, 2)}</div>
