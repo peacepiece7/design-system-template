@@ -3,16 +3,37 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"], // @repo/math#build는 math 레포지토리의 build 태스크를 먼저 실행하고 나머지 build 태스크를 하위부터 실행한다.
+      "dependsOn": ["lint-before-build", "test-before-test", "^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
     "dev": {
       "cache": false,
+      "persistent": true,
+      "dependsOn": ["//#dev:setup"]
+    },
+    "//#dev:setup": {
+      "outputs": [".codegen/**"]
+    },
+    "dev:web": {
+      "cache": false,
       "persistent": true
+    },
+    "dev:docs": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": []
+    },
+    "test": {
+      "dependsOn": []
+    },
+    "lint-before-build": {
+      "dependsOn": ["@repo/ui#lint", "@repo/math#lint"]
+    },
+    "test-before-test": {
+      "dependsOn": ["@repo/ui#test", "@repo/math#test"]
     }
   }
 }
