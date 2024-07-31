@@ -8,10 +8,5 @@
 
   "editor.quickSuggestions": {
     "strings": "on"
-  },
-
-  "tailwindCSS.experimental.configFile": {
-    "packages/tailwind-config/tailwind.config.js": "packages/tailwind-config/**",
-    "themes/neon/tailwind.config.js": "themes/neon/**"
   }
 }
