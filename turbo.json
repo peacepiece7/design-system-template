@@ -3,9 +3,14 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["lint-before-build", "test-before-test", "^build"],
+      "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        "storybook-static/**"
+      ]
     },
     "dev": {
       "cache": false,
@@ -23,17 +28,14 @@
       "cache": false,
       "persistent": true
     },
+    "storybook": {
+      "dependsOn": ["@repo/ui#test", "@apps/storybook#build"]
+    },
     "lint": {
       "dependsOn": []
     },
     "test": {
       "dependsOn": []
-    },
-    "lint-before-build": {
-      "dependsOn": ["@repo/ui#lint", "@repo/math#lint"]
-    },
-    "test-before-test": {
-      "dependsOn": ["@repo/ui#test", "@repo/math#test"]
     }
   }
 }

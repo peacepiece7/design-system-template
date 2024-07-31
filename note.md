@@ -28,6 +28,8 @@ pnpm dlx storybook@latest init
 
 ```bash
 pnpm install @repo/ui --filter=storybook
+pnpm install @repo/eslint-config --save-dev --filter=storybook
+pnpm install @repo/typescript-config --save-dev --filter=storybook
 ```
 
 app/storybook/package.json의 dependincies에 직접 추가해줘도 됨 똑같음

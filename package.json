@@ -13,7 +13,8 @@
     "test": "turbo test",
     "test:packages": "turbo run test --filter=./packages/*",
     "test:apps": "turbo run test --filter=./apps/*",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "storybook": "turbo run storybook"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
