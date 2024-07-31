@@ -19,30 +19,13 @@ module.exports = {
       '6xl': '4rem',
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    plugin(function ({ addUtilities, addBase, config }) {
-      addUtilities(UTILITY_STYLES)
-      // base styles
-      // https://v1.tailwindcss.com/docs/plugins#adding-base-styles
-      // addBase({ h1: config("theme.fontSize.4xl") })
-
-      // media-query
-      // https://v1.tailwindcss.com/docs/plugins#referencing-the-user-s-config
-
-      // gradient color (default variants)
-      // https://v1.tailwindcss.com/docs/plugins#providing-default-options
-
-      // add compnents media-query
-      // https://v1.tailwindcss.com/docs/plugins#css-in-js-syntax
-    }),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
 
 // intellisense 때문에 ./default.css에서 오버라이드
-const UTILITY_STYLES = {
-  '.global-layout': {},
-  '.link': {},
-  '.btn-common': {},
-  '.text-clickable': {},
-}
+// const UTILITY_STYLES = {
+//   '.global-layout': {},
+//   '.link': {},
+//   '.btn-common': {},
+//   '.text-clickable': {},
+// }

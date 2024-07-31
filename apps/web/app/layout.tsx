@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
-import '@repo/tailwind-config/default.css'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',

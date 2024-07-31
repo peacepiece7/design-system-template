@@ -1,19 +1,17 @@
 import Image from 'next/image'
 import { Button } from '@repo/ui/button'
-import styles from './page.module.css'
 import { add } from '@repo/math/add'
 import { subtract } from '@repo/math/subtract'
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
       <h1>WEB (APPLICATION)</h1>
-      <main className={styles.main}>
+      <h2>TAILWIND TEST!</h2>
+      <main>
         <div>@repo/math/add : {add(1, 2)}</div>
         <div>@repo/math/subtract : {subtract(1, 2)}</div>
-
         <Image
-          className={styles.logo}
           src='/next.svg'
           alt='Next.js logo'
           width={180}
@@ -26,16 +24,14 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-        <p>tailwind test!</p>
-        <div className={styles.ctas}>
+        <p className='p-4'>tailwind test!</p>
+        <div>
           <a
-            className={styles.primary}
             href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
             target='_blank'
             rel='noopener noreferrer'
           >
             <Image
-              className={styles.logo}
               src='/vercel.svg'
               alt='Vercel logomark'
               width={20}
@@ -47,14 +43,13 @@ export default function Home() {
             href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
             target='_blank'
             rel='noopener noreferrer'
-            className={styles.secondary}
           >
             Read our docs
           </a>
         </div>
-        <Button className={styles.secondary}>Open alert</Button>
+        <Button>Open alert</Button>
       </main>
-      <footer className={styles.footer}>
+      <footer>
         <a
           href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
           target='_blank'
