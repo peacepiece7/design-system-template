@@ -14,7 +14,8 @@
     "test:packages": "turbo run test --filter=./packages/*",
     "test:apps": "turbo run test --filter=./apps/*",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "storybook": "turbo run storybook"
+    "storybook": "turbo run storybook",
+    "clean": "rm -rf .turbo && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' + && find . -name '.next' -type d -prune -exec rm -rf '{}' + && rm -f package-lock.json + && pnpm install"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

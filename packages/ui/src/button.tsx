@@ -41,6 +41,8 @@ export const Button = ({
     ? 'storybook-button--primary'
     : 'storybook-button--secondary'
 
+  const r = 'foo'
+
   return (
     <button
       className={[
