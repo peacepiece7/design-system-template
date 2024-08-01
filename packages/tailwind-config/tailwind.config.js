@@ -5,7 +5,10 @@ module.exports = {
   content: [
     'src/**/*.{js,ts,jsx,tsx}',
     'apps/**/*.{js,ts,jsx,tsx}',
+    'packages/**/*.{js,ts,jsx,tsx}',
+    'app/**/*.{js,ts,jsx,tsx}',
     'pages/**/*.{js,ts,jsx,tsx}',
+    './index.html',
   ],
   theme: {
     fontSize: {

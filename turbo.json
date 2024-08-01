@@ -29,7 +29,7 @@
       "persistent": true
     },
     "storybook": {
-      "dependsOn": ["@repo/ui#test", "@apps/storybook#build"]
+      "dependsOn": ["@repo/ui#test", "@app/storybook#build"]
     },
     "lint": {
       "dependsOn": []
