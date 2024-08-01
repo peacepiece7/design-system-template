@@ -1,12 +1,4 @@
 {
   "eslint.workingDirectories": [{ "mode": "auto" }],
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-
-  "editor.quickSuggestions": {
-    "strings": "on"
-  }
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

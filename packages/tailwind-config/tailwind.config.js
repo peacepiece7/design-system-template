@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     'src/**/*.{js,ts,jsx,tsx}',
-    'app/**/*.{js,ts,jsx,tsx}',
+    'apps/**/*.{js,ts,jsx,tsx}',
     'pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
@@ -38,7 +38,6 @@ module.exports = {
   ],
 }
 
-// intellisense 때문에 ./default.css에서 오버라이드
 const UTILITY_STYLES = {
   '.global-layout': {
     'grid-column-start': '2',
@@ -50,4 +49,8 @@ const UTILITY_STYLES = {
     padding: '3rem',
     height: '100%',
   },
+  // intellisense 때문에 ./default.css에서 오버라이드 (css 파일에 작성하면 intellisense 동작이 안됨)
+  '.link': {},
+  '.btn-common': {},
+  '.text-clickable': {},
 }
