@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/typescript-config/node.json",
+  "extends": "@repo/config-ts/node.json",
   "compilerOptions": {
     // incremental : false(증분 생성)이기 때문에 해당 옵션은 제거합니다.
     // "composite": true,

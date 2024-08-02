@@ -1,4 +1,4 @@
-import { Button } from '@repo/shadcn-ui'
+import { Button } from '@repo/ui-shadcn'
 import Image from 'next/image'
 
 export default function Home() {

@@ -1,5 +1,5 @@
 import './header.css'
-import { Button } from '@repo/shadcn-ui'
+import { Button } from '@repo/ui-shadcn'
 
 type User = {
   name: string

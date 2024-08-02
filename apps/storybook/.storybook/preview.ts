@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react'
-import '@repo/shadcn-ui/styles'
+import '@repo/ui-shadcn/styles'
 
 const preview: Preview = {
   parameters: {
