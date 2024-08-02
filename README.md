@@ -79,3 +79,35 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+## syncpack
+
+모노레포에서 일관된 종속성 버전을 관리하기 위한 도구이다.
+
+[npm 공식 사이트 참고](https://www.npmjs.com/package/syncpack)
+
+### 설치 및 설정
+
+`pnpm install syncpack --save-dev --workspace-root`
+
+`npm install -g syncpack`
+
+.syncpackrc.cjs 파일을 프로젝트 루트에 생성 후 아래와 같이 설정한다.
+
+```js
+module.exports = {
+  dependencyTypes: ['dev', 'peer', 'prod'],
+  semverRange: '^',
+  source: ['package.json', 'apps/*/package.json', 'packages/*/package.json'],
+  versionGroups: [
+    {
+      label:
+        'Internal config packages should be pinned to "*" (meaning any version is acceptable)',
+      packages: ['**'],
+      dependencies: ['config-prettier', 'config-tsconfig', 'eslint-config-tds'],
+      dependencyTypes: ['dev'],
+      pinVersion: '*',
+    },
+  ],
+}
+```
