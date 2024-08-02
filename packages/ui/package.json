@@ -15,7 +15,7 @@
   "devDependencies": {
     "@repo/config-eslint": "workspace:*",
     "@repo/config-ts": "workspace:*",
-    "@repo/config-tailwind": "workspace:^",
+    "@repo/config-tailwind": "workspace:*",
     "@turbo/gen": "^1.12.4",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@types/eslint": "^8.56.5",

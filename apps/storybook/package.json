@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "@repo/ui-shadcn": "workspace:*",
-    "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
-    "@repo/config-ts": "workspace:*",
-    "@repo/config-tailwind": "workspace:^",
     "@chromatic-com/storybook": "1.6.1",
+    "@repo/config-eslint": "workspace:*",
+    "@repo/config-tailwind": "workspace:*",
+    "@repo/config-ts": "workspace:*",
     "@storybook/addon-essentials": "^8.2.6",
     "@storybook/addon-interactions": "^8.2.6",
     "@storybook/addon-links": "^8.2.6",
@@ -34,19 +34,19 @@
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-storybook": "^0.8.0",
-    "storybook": "^8.2.6",
-    "vite": "^5.3.4",
     "postcss": "^8.4.40",
-    "autoprefixer": "^10.4.19",
+    "storybook": "^8.2.6",
     "tailwind-merge": "^2.4.0",
     "tailwindcss": "^3.4.7",
     "tailwindcss-animate": "^1.0.6",
     "typescript": "^5.4.5",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1"
+    "vite": "^5.3.4"
   }
 }

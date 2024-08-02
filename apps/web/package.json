@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@repo/config-eslint": "workspace:*",
-    "@repo/config-tailwind": "workspace:^",
+    "@repo/config-tailwind": "workspace:*",
     "@repo/config-ts": "workspace:*",
     "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20.11.24",
