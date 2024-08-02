@@ -1,4 +1,5 @@
 import React from 'react'
+import '@repo/shadcn-ui/style'
 
 import { Header } from './Header'
 import './page.css'

@@ -1,17 +1,31 @@
-/** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
 module.exports = {
-  darkMode: ['class'],
   content: [
-    'src/**/*.{js,ts,jsx,tsx}',
-    'apps/**/*.{js,ts,jsx,tsx}',
-    'packages/**/*.{js,ts,jsx,tsx}',
-    'app/**/*.{js,ts,jsx,tsx}',
-    'pages/**/*.{js,ts,jsx,tsx}',
-    './index.html',
+    `../../apps/**/*.{ts,tsx,html,stories.tsx}`,
+    '../../packages/**/*.{ts,tsx,html,stories.tsx}',
   ],
-  prefix: 'tw',
+  darkMode: ['class'],
   theme: {
+    screens: {
+      xs: '475px',
+      sm: '650px',
+      md: '868px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+    fontSize: {
+      tiny: '.65rem',
+      xs: '.75rem',
+      sm: '.80rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -20,18 +34,6 @@ module.exports = {
       },
     },
     extend: {
-      fontSize: {
-        xs: '1rem',
-        sm: '1.25rem',
-        base: '1.5rem',
-        lg: '2rem',
-        xl: '2.2em',
-        '2xl': '2.5rem',
-        '3xl': '2.7rem',
-        '4xl': '3rem',
-        '5xl': '3.4rem',
-        '6xl': '4rem',
-      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -74,12 +76,12 @@ module.exports = {
       },
       keyframes: {
         'accordion-down': {
-          from: { height: '0' },
+          from: { height: 0 },
           to: { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
           from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
+          to: { height: 0 },
         },
       },
       animation: {
@@ -88,27 +90,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('tailwindcss-animate'),
-    plugin(function ({ addUtilities }) {
-      addUtilities(UTILITY_STYLES)
-    }),
-  ],
-}
-
-const UTILITY_STYLES = {
-  '.global-layout': {
-    'grid-column-start': '2',
-    'grid-column-end': '5',
-    'grid-row-start': '2',
-    'grid-row-end': '4',
-    'background-color': '#ebf8fc', // bg-slate-50
-    overflow: 'hidden',
-    padding: '3rem',
-    height: '100%',
-  },
-  '.link': {},
-  '.btn-common': {},
-  '.text-clickable': {},
+  plugins: [require('tailwindcss-animate')],
 }

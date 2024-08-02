@@ -53,3 +53,11 @@ app/storybook/package.json의 dependincies에 직접 추가해줘도 됨 똑같�
 # with tailwind
 
 [with tailwind](https://github.com/vercel/turbo/tree/main/examples/with-tailwind)
+
+# typescript alias
+
+패키지를 제공하는 쪽에서 빌드해서 컴포넌트를 제공해야하고
+
+빌드하지 않고 쓸 경우 패키지를 사용하는 쪽에서 alias 설정을 해줘야함
+
+https://github.com/vercel/turbo/discussions/620

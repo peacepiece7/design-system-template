@@ -9,5 +9,4 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-  exclude: ['tailwind.config.cjs'],
 }
