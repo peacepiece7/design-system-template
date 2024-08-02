@@ -166,12 +166,9 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/math':
+      '@repo/shadcn-ui':
         specifier: workspace:*
-        version: link:../../packages/math
-      '@repo/ui':
-        specifier: workspace:^
-        version: link:../../packages/ui
+        version: link:../../packages/shadcn-ui
       next:
         specifier: 15.0.0-rc.0
         version: 15.0.0-rc.0(react-dom@19.0.0-rc-f994737d14-20240522)(react@19.0.0-rc-f994737d14-20240522)
@@ -249,15 +246,6 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
-  packages/math:
-    devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
-      typescript:
-        specifier: latest
-        version: 5.5.4
-
   packages/shadcn-ui:
     dependencies:
       react:
@@ -304,7 +292,17 @@ importers:
         specifier: ^1.0.6
         version: 1.0.7(tailwindcss@3.4.7)
 
-  packages/tailwind-config: {}
+  packages/tailwind-config:
+    devDependencies:
+      '@tailwindcss/typography':
+        specifier: ^0.5.13
+        version: 0.5.13(tailwindcss@3.4.7)
+      tailwindcss:
+        specifier: ^3.4.7
+        version: 3.4.7
+      tailwindcss-animate:
+        specifier: ^1.0.6
+        version: 1.0.7(tailwindcss@3.4.7)
 
   packages/typescript-config: {}
 

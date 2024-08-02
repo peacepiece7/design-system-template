@@ -61,3 +61,11 @@ app/storybook/package.json의 dependincies에 직접 추가해줘도 됨 똑같�
 빌드하지 않고 쓸 경우 패키지를 사용하는 쪽에서 alias 설정을 해줘야함
 
 https://github.com/vercel/turbo/discussions/620
+
+# reference
+
+turborepo + storybook + tailwindcss + typescript
+
+https://github.com/arevalolance/design-system-template
+
+https://github.com/anthonyhastings/turborepo-design-system

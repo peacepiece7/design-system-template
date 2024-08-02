@@ -1,18 +1,14 @@
+import { Button } from '@repo/shadcn-ui'
 import Image from 'next/image'
-import { add } from '@repo/math/add'
-import { subtract } from '@repo/math/subtract'
-import { Button } from '@repo/ui/button'
 
 export default function Home() {
   return (
     <div>
       <h1>WEB (APPLICATION)</h1>
-      <h2 className='twtext-red-500 text-blue-500 twtext-red-500 text-xl twtext-xl'>
-        TAILWIND TEST?????????
+      <h2 className='twtext-red-500 text-blue-500 twtext-red-500 text-xl twtext-xl '>
+        TAILWIND TEST
       </h2>
       <main>
-        <div>@repo/math/add : {add(1, 2)}</div>
-        <div>@repo/math/subtract : {subtract(1, 2)}</div>
         <Image
           src='/next.svg'
           alt='Next.js logo'
