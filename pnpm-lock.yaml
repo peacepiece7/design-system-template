@@ -20,6 +20,9 @@ importers:
       '@commitlint/types':
         specifier: ^19.0.3
         version: 19.0.3
+      conventional-changelog-atom:
+        specifier: ^5.0.0
+        version: 5.0.0
       husky:
         specifier: ^9.1.4
         version: 9.1.4
@@ -4973,6 +4976,11 @@ packages:
     engines: {node: '>=16'}
     dependencies:
       compare-func: 2.0.0
+    dev: true
+
+  /conventional-changelog-atom@5.0.0:
+    resolution: {integrity: sha512-WfzCaAvSCFPkznnLgLnfacRAzjgqjLUjvf3MftfsJzQdDICqkOOpcMtdJF3wTerxSpv2IAAjX8doM3Vozqle3g==}
+    engines: {node: '>=18'}
     dev: true
 
   /conventional-changelog-conventionalcommits@7.0.2:
