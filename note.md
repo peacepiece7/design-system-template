@@ -7,7 +7,7 @@
 
 # overview
 
-자세한 내용은 터보 레포에 대해서 정리한 포스팅 [crafting terborepo 요약](222.121.79.140/posts/turborepo/2) 참고!
+자세한 내용은 터보 레포에 대해서 정리한 포스팅 [crafting terborepo 요약](222.121.79.140/posts/turborepo/2) 참고
 
 # pnpm version
 
