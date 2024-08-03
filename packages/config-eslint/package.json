@@ -5,7 +5,6 @@
   "files": [
     "library.js",
     "next.js",
-    "next-lint.js",
     "react-internal.js",
     "storybook.js"
   ],

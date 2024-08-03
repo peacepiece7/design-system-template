@@ -4,14 +4,7 @@ const project = resolve(process.cwd(), 'tsconfig.json');
 
 module.exports = {
   root: true,
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    require.resolve('@repo/config-eslint/node_modules/@vercel/style-guide/eslint/next'),
-    'prettier',
-    'turbo',
-  ],
-  // extends: ['@repo/config-eslint/next-lint.js'],
-  // extends: ['@repo/config-eslint/next.js'],
+  extends: [require.resolve('./node_modules/@repo/config-eslint/next.js')],
   settings: {
     'import/resolver': {
       typescript: {
