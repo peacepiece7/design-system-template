@@ -1,12 +1,6 @@
 {
   "extends": "@repo/config-ts/nextjs.json",
-  "compilerOptions": {
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
+  // "compilerOptions": { "plugins": [{ "name": "next" }] },
   "include": [
     "next-env.d.ts",
     "next.config.mjs",
@@ -14,5 +8,10 @@
     "**/*.tsx",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "jsx": "preserve"
+  }
 }

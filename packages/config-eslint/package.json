@@ -5,9 +5,13 @@
   "files": [
     "library.js",
     "next.js",
+    "next-lint.js",
     "react-internal.js",
     "storybook.js"
   ],
+  "exports": {
+    "next-lint": "./next-lint.js"
+  },
   "scripts": {
     "test": "echo \"Eslint-config : no test specified\""
   },

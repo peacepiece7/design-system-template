@@ -6,12 +6,19 @@ const project = resolve(process.cwd(), 'tsconfig.json');
 module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:storybook/recommended',
+    require.resolve('@vercel/style-guide/eslint/next'),
     'prettier',
     'turbo',
   ],
-  env: { browser: true, es2020: true },
+  globals: {
+    React: true,
+    JSX: true,
+  },
+  env: {
+    node: true,
+    browser: true,
+  },
+  plugins: ['only-warn'],
   settings: {
     'import/resolver': {
       typescript: {
@@ -19,5 +26,10 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ['node_modules/', 'dist/'],
+  ignorePatterns: [
+    // Ignore dotfiles
+    '.*.js',
+    'node_modules/',
+  ],
+  overrides: [{ files: ['*.js?(x)', '*.ts?(x)'] }],
 };
