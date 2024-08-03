@@ -99,6 +99,12 @@ app/storybook/package.json의 dependincies에 직접 추가해줘도 됨 똑같�
 
 https://github.com/vercel/turbo/discussions/620
 
+# commitlint
+
+[🎨 commitlint](https://commitlint.js.org/)
+
+`pnpm install --save-dev -w @commitlint/config-conventional @commitlint/cli`
+
 # reference
 
 turborepo + storybook + tailwindcss + typescript
