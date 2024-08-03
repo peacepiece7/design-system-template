@@ -13,9 +13,9 @@
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
-    "@repo/config-ts": "workspace:*",
-    "@repo/config-tailwind": "workspace:*",
+    "@repo/config-eslint": "*",
+    "@repo/config-ts": "*",
+    "@repo/config-tailwind": "*",
     "@turbo/gen": "^1.12.4",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@types/eslint": "^8.56.5",
@@ -26,6 +26,6 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "react": "19.0.0-rc-f994737d14-20240522"
+    "react": "^18.3.1"
   }
 }

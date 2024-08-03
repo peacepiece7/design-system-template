@@ -19,9 +19,9 @@
     "react": "^18.3.1"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
-    "@repo/config-tailwind": "workspace:*",
-    "@repo/config-ts": "workspace:*",
+    "@repo/config-eslint": "*",
+    "@repo/config-tailwind": "*",
+    "@repo/config-ts": "*",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/react": "^18.3.3",

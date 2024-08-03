@@ -1,61 +1,54 @@
-'use client'
-import { ReactNode } from 'react'
+"use client";
+import { ReactNode } from "react";
 
 export interface ButtonProps {
   /**
    * Button contents
    */
-  children?: ReactNode
+  children?: ReactNode;
   /**
    * Optional class name
    */
-  className?: string
+  className?: string;
   /**
    * Is this the principal call to action on the page?
    */
-  primary?: boolean
+  primary?: boolean;
   /**
    * What background color to use
    */
-  backgroundColor?: string
+  backgroundColor?: string;
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large'
+  size?: "small" | "medium" | "large";
   /**
    * Optional click handler
    */
-  onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+  onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 export const Button = ({
   children,
   className,
   primary = false,
-  size = 'medium',
+  size = "medium",
   backgroundColor,
   onClick,
   ...props
 }: ButtonProps) => {
-  const mode = primary
-    ? 'storybook-button--primary'
-    : 'storybook-button--secondary'
+  const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
 
-  const r = 'foo'
+  const r = "foo";
 
   return (
     <button
-      className={[
-        'storybook-button',
-        `storybook-button--${size}`,
-        className,
-        mode,
-      ].join(' ')}
+      className={["storybook-button", `storybook-button--${size}`, className, mode].join(" ")}
       style={{ backgroundColor }}
       onClick={onClick}
       {...props}
     >
       {children}
     </button>
-  )
-}
+  );
+};

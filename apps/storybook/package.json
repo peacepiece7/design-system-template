@@ -12,15 +12,15 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@repo/ui-shadcn": "workspace:*",
+    "@repo/ui-shadcn": "*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@repo/config-eslint": "*",
+    "@repo/config-tailwind": "*",
+    "@repo/config-ts": "*",
     "@chromatic-com/storybook": "1.6.1",
-    "@repo/config-eslint": "workspace:*",
-    "@repo/config-tailwind": "workspace:*",
-    "@repo/config-ts": "workspace:*",
     "@storybook/addon-essentials": "^8.2.6",
     "@storybook/addon-interactions": "^8.2.6",
     "@storybook/addon-links": "^8.2.6",
