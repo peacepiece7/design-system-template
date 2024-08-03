@@ -9,6 +9,43 @@
 
 자세한 내용은 터보 레포에 대해서 정리한 포스팅 [crafting terborepo 요약](222.121.79.140/posts/turborepo/2) 참고!
 
+# pnpm version
+
+```bash
+corepack enable
+npm install -g pnpm
+pnpm -v
+```
+
+package.json에 있는 버전을 쓰면 된다.  
+`pnpm install`시 설치된 버전에 상관없이 명시된 버전으로 변경되었다.
+
+문서는 어려 방법을 알려주던데, 일단 내가 해보니까 알아서 버전이 변경됨  
+문제가 있으면 다시 확인해보자
+
+```json
+{ "packageManager": "pnpm@8.15.6" }
+```
+
+# node version
+
+```
+mkdir ./nvmrc
+echo "v20.12.1" > .nvmrc
+```
+
+window는 (.bashrc에 alias 넣어두자)
+
+```bash
+nvm use $(cat .nvmrc)
+```
+
+unix 계열은
+
+```bash
+nvm use
+```
+
 # with story-book
 
 [turbo repo storybook guide](https://turbo.build/repo/docs/guides/tools/storybook)

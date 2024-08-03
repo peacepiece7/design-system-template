@@ -13,13 +13,16 @@
     "types:check": "turbo run types:check",
     "test": "turbo test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "clean": "turbo run clean && rm -rf node_modules",
+    "clean:win": "turbo run clean && rmdir /s /q node_modules",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^9.1.4",
     "prettier": "^3.2.5",
+    "syncpack": "^12.4.0",
     "turbo": "^2.0.9",
-    "typescript": "^5.4.5",
-    "syncpack": "^12.4.0"
+    "typescript": "^5.4.5"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
