@@ -36,3 +36,7 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+
+# by-products
+scripts/git_commit_template.txt
