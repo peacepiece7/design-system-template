@@ -40,10 +40,6 @@ export const GIT_COMMIT_CONFIGURATION = {
       title: 'Performance Improvements',
       description: '성능을 개선했을 때 사용합니다. (예 : 로딩속도 개선, 메모리 사용량 감소)',
     },
-    CI: {
-      title: 'CI',
-      description: 'CI 설정 및 스크립트를 수정했을 때 사용합니다.',
-    },
   },
   'type-enum-en': {
     feat: {
@@ -179,14 +175,10 @@ const GIT_COMMIT_TEMPLATE = `
 # Pull request: #123
 # Refs: 676104e, a215868
 
-# REFERENCE:
-# https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit
-# https://www.conventionalcommits.org/ko/v1.0.0/
-
 # HEADER_TYPE:
-${Object.keys(GIT_COMMIT_CONFIGURATION['type-enum-kor'])
+${Object.keys(GIT_COMMIT_CONFIGURATION['type-enum-en'])
   .map((key) => {
-    return `# ${key} : ${GIT_COMMIT_CONFIGURATION['type-enum-kor'][key].description}`;
+    return `# ${key} : ${GIT_COMMIT_CONFIGURATION['type-enum-en'][key].description}`;
   })
   .join('\n')}
   
@@ -195,6 +187,13 @@ ${Object.keys(GIT_COMMIT_CONFIGURATION['type-enum-kor'])
 # 한글을 지향합니다.
 # 제목 끝에 마침표 금지
 # 본문는 "무엇을", "왜"에 대한 내용을 작성해주세요.
+
+# REFERENCE:
+# https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit
+# https://www.conventionalcommits.org/ko/v1.0.0/
+
+# ROLE:
+# https://commitlint.js.org/reference/rules.html
 `;
 
 fs.writeFileSync('./scripts/git_commit_template.txt', GIT_COMMIT_TEMPLATE);
