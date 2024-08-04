@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <h1>WEB (APPLICATION)</h1>
-      <h2 className="twtext-red-500 text-blue-500 twtext-red-500 text-xl twtext-xl ">TAILWIND TEST</h2>
+      <h2 className="twtext-red-500 text-blue-500 twtext-red-500 text-xl twtext-xl">TAILWIND TEST</h2>
       <main>
         <Image src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
         <ol>

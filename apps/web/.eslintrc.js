@@ -12,11 +12,7 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: [
-    // Ignore dotfiles
-    '.*.js',
-    'node_modules/',
-  ],
+  ignores: ['.*.js', '*.config.js', 'node_modules/'],
   parser: '@typescript-eslint/parser',
   overrides: [{ files: ['*.js?(x)', '*.ts?(x)'] }],
   parserOptions: {
