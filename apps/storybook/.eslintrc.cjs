@@ -7,4 +7,6 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
+
+  ignorePatterns: ['*.html', '.*.js', '.*.cjs', '*.config.js', 'node_modules/'],
 };
