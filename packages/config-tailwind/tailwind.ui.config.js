@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    `../../apps/**/*.{ts,tsx,html,stories.tsx}`,
-    '../../packages/**/*.{ts,tsx,html,stories.tsx}',
-  ],
+  content: [`../../apps/**/*.{ts,tsx,html,stories.tsx}`, '../../packages/**/*.{ts,tsx,html,stories.tsx}'],
   darkMode: ['class'],
   theme: {
     screens: {
@@ -91,4 +88,4 @@ module.exports = {
     },
   },
   plugins: [require('tailwindcss-animate')],
-}
+};

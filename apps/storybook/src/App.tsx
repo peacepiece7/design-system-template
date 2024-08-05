@@ -1,3 +1,4 @@
+import { AccordionDemo } from './stories/ArrordionDemo';
 import './App.css';
 
 function App() {
@@ -5,6 +6,9 @@ function App() {
     <>
       <h1>Design System Template</h1>
       <p>Turborepo + Storybook + Shadcn + Tailwindcss</p>
+      <div className="w-1/3 mx-auto">
+        <AccordionDemo />
+      </div>
     </>
   );
 }
