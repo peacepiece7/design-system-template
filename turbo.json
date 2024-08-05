@@ -25,6 +25,8 @@
     },
     "storybook": { "dependsOn": [] },
     "lint": { "dependsOn": [] },
+    "format": { "dependsOn": [] },
+    "types:check": { "dependsOn": [] },
     "test": { "dependsOn": [] },
     "clean": { "dependsOn": [] }
   }

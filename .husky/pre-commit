@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+pnpm run lint & lint:packages:semver & lint:packages:mismatches & pnpm run types:check & pnpm run test
