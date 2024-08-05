@@ -1,5 +1,5 @@
-"use client";
-import { ReactNode } from "react";
+'use client';
+import { ReactNode } from 'react';
 
 export interface ButtonProps {
   /**
@@ -21,7 +21,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: "small" | "medium" | "large";
+  size?: 'small' | 'medium' | 'large';
   /**
    * Optional click handler
    */
@@ -32,18 +32,16 @@ export const Button = ({
   children,
   className,
   primary = false,
-  size = "medium",
+  size = 'medium',
   backgroundColor,
   onClick,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
-
-  const r = "foo";
+  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
 
   return (
     <button
-      className={["storybook-button", `storybook-button--${size}`, className, mode].join(" ")}
+      className={['storybook-button', `storybook-button--${size}`, className, mode].join(' ')}
       style={{ backgroundColor }}
       onClick={onClick}
       {...props}

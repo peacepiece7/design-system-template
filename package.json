@@ -9,13 +9,13 @@
     "lint:packages:list": "syncpack list",
     "lint:packages:semver": "syncpack lint-semver-ranges",
     "lint:packages:mismatches": "syncpack list-mismatches",
-    "lint:format": "prettier --check \"**/*.{js,ts,tsx,md,mdx,json}\"",
     "types:check": "turbo run types:check",
     "test": "turbo test",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "turbo run clean && rm -rf node_modules",
     "clean:win": "turbo run clean && rmdir /s /q node_modules",
-    "prepare": "husky & node ./scripts/git_commit_convention.mjs & git config commit.template ./scripts/git_commit_template.txt"
+    "prepare": "husky & node ./scripts/git_commit_convention.mjs & git config commit.template ./scripts/git_commit_template.txt",
+    "format": "prettier --write \"**/*/app/**/*.{ts,tsx,md}\"",
+    "lint:format": "prettier --check \"**/*.{js,ts,tsx,md,mdx,json}\""
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",

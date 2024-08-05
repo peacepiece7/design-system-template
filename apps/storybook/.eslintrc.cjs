@@ -1,7 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  extends: ['@repo/config-eslit/storybook.js'],
+  extends: [require.resolve('./node_modules/@repo/config-eslint/storybook.js')],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {

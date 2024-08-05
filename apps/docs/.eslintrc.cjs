@@ -1,5 +1,4 @@
-const { resolve } = require('node:path');
-
+const path = require('node:path');
 const project = resolve(process.cwd(), 'tsconfig.json');
 
 module.exports = {
@@ -12,7 +11,7 @@ module.exports = {
       },
     },
   },
-  ignores: ['.*.js', '*.config.js', 'node_modules/'],
+  ignorePatterns: ['.*.js', '.*.cjs', '*.config.js', 'node_modules/'],
   parser: '@typescript-eslint/parser',
   overrides: [{ files: ['*.js?(x)', '*.ts?(x)'] }],
   parserOptions: {
