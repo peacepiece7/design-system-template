@@ -231,7 +231,7 @@ ${Object.keys(GIT_COMMIT_CONFIGURATION['type-enum-kor'])
 # 본문는 "무엇을", "왜"에 대한 내용을 작성해주세요.
 `;
 
-fs.writeFileSync('./git_commit_template.txt', GIT_COMMIT_TEMPLATE);
+fs.writeFileSync('./git_commit_template', GIT_COMMIT_TEMPLATE);
 ```
 
 packge.json에 prepare를 실행할 떄 git commit template이 돌아가도록 설정하자
@@ -239,7 +239,7 @@ packge.json에 prepare를 실행할 떄 git commit template이 돌아가도록 �
 ```json
 {
   "scripts": {
-    "prepare": "husky & node ./script.js & git config commit.template ./git_commit_template.txt"
+    "prepare": "husky & node ./script.js & git config commit.template ./git_commit_template"
   }
 }
 ```

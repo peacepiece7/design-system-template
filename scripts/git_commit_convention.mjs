@@ -196,4 +196,4 @@ ${Object.keys(GIT_COMMIT_CONFIGURATION['type-enum-en'])
 # https://commitlint.js.org/reference/rules.html
 `;
 
-fs.writeFileSync('./scripts/git_commit_template.txt', GIT_COMMIT_TEMPLATE);
+fs.writeFileSync('./scripts/git_commit_template', GIT_COMMIT_TEMPLATE);

@@ -39,4 +39,4 @@ yarn-error.log*
 
 
 # by-products
-scripts/git_commit_template.txt
+scripts/git_commit_template
