@@ -151,7 +151,7 @@ export const PROMPT_CONFIGURATION = {
 
 const GIT_COMMIT_TEMPLATE = `
 
-# NOTE: 
+# NOTE:
 # 다음 형태로 커밋 메시지를 작성해주세요.
 # <타입>[적용 범위(선택 사항)]: <설명>
 #
@@ -165,7 +165,7 @@ const GIT_COMMIT_TEMPLATE = `
 #
 # 저녁 매뉴 추천 받습니다.
 # 주말엔 놀고 싶어요.
-# 
+#
 # - nodejs 버전이 올라가면서 사용하지 않는 라이브러리를 제거
 # - newLibararyName으로 통합
 # - libraryName를 사용중인 경우 newLibararyName으로 변경 필요
@@ -181,7 +181,7 @@ ${Object.keys(GIT_COMMIT_CONFIGURATION['type-enum-en'])
     return `# ${key} : ${GIT_COMMIT_CONFIGURATION['type-enum-en'][key].description}`;
   })
   .join('\n')}
-  
+
 # REMEMBER_ME:
 # HEADER TYPE은 영어로 작성해주세요.
 # 한글을 지향합니다.

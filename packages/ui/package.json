@@ -17,13 +17,8 @@
     "@repo/config-ts": "*",
     "@repo/config-tailwind": "*",
     "@turbo/gen": "^1.12.4",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@types/eslint": "^8.56.5",
-    "@types/node": "^20.11.24",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5"
+    "@types/react-dom": "^18.3.0"
   },
   "dependencies": {
     "react": "^18.3.1"
