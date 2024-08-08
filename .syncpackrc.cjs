@@ -23,9 +23,9 @@ module.exports = {
   semverGroups: [
     {
       range: '',
-      label: '@chromatic-com/storybook should be pinned to a specific version (syncpack test, no meaning)',
+      label: 'Pinned dependencies should not have a range',
       packages: ['**'],
-      dependencies: ['@chromatic-com/storybook'],
+      dependencies: ['@chromatic-com/storybook', 'react-day-picker', 'cmdk'],
       dependencyTypes: ['dev', 'prod', 'peer'],
     },
     {
