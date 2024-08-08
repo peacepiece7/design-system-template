@@ -9,7 +9,7 @@ module.exports = {
     {
       label: 'Internal config packages should be pinned to "*" (meaning any version is acceptable)',
       packages: ['**'],
-      dependencies: ['@repo/config-eslint', '@repo/config-tailwind', '@repo/confing-ts', '@repo/ui-shadcn'],
+      dependencies: ['@repo/config-eslint', '@repo/config-tailwind', '@repo/config-ts', '@repo/ui-shadcn'],
       dependencyTypes: ['dev', 'prod', 'peer'],
       pinVersion: '*',
     },
