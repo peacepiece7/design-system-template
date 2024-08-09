@@ -1,7 +1,7 @@
 // 파일 시스템 모듈과 URL 모듈을 가져옵니다.
-import { fileURLToPath } from 'url';
-import path, { dirname } from 'path';
-import fs from 'fs';
+import { fileURLToPath } from 'node:url';
+import path, { dirname } from 'node:path';
+import fs from 'node:fs';
 
 // @ts-expect-error eee
 const __filename = fileURLToPath(import.meta.url);

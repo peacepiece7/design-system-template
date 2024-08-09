@@ -12,7 +12,8 @@
   "scripts": {
     "prepare": "node ./src/scripts/register.mjs",
     "lint": "eslint . --max-warnings 0",
-    "test": "echo \"UI : no test specified\""
+    "test": "echo \"UI : no test specified\"",
+    "types:check": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
