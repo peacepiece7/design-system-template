@@ -16,7 +16,7 @@ pnpm run dev
 
 ## Packages
 
-```
+```txt
 `@app/docs`: Next.js app
 `@app/web`: Next.js app
 `@app/storybook`: storybook app
@@ -34,3 +34,7 @@ pnpm run dev
 - husky
 - commitlint
 - syncpack
+
+## Customization
+
+`scripts/**/*` 스크립트 파일을 수정합니다.

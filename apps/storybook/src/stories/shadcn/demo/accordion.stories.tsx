@@ -29,37 +29,6 @@ const meta = {
     asChild: false,
     collapsible: true,
   },
-} satisfies Meta<typeof Accordion>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Default: Story = {
-  argTypes: {
-    type: {
-      options: ['single', 'multiple'],
-      control: { type: 'select' },
-    },
-    collapsible: {
-      control: { type: 'boolean' },
-      description: 'type : "single" 일 때만 사용 가능합니다.',
-      if: { arg: 'type', neq: 'multiple' },
-    },
-    asChild: {
-      description: 'true시 AccordionContent가 첫번째 자식 태그로 랜더링됩니다. (\\<Slot />)',
-      control: { type: 'boolean' },
-    },
-  },
-  mount: (ctx) => {
-    return ctx.mount;
-  },
-  decorators: [
-    (Story) => (
-      <div className="min-w-[500px]">
-        <Story />
-      </div>
-    ),
-  ],
   render: (args) => {
     const collapsible = args.type === 'single' ? args.collapsible : false;
     return (
@@ -87,4 +56,69 @@ export const Default: Story = {
       </Accordion>
     );
   },
+} satisfies Meta<typeof Accordion>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+  args: {
+    type: 'single',
+  },
+  argTypes: {
+    type: {
+      options: ['single', 'multiple'],
+      control: { type: 'select' },
+    },
+    collapsible: {
+      control: { type: 'boolean' },
+      description: 'type : "single" 일 때만 사용 가능합니다.',
+      if: { arg: 'type', neq: 'multiple' },
+    },
+    asChild: {
+      description: 'true시 AccordionContent가 첫번째 자식 태그로 랜더링됩니다. (\\<Slot />)',
+      control: { type: 'boolean' },
+    },
+  },
+  mount: (ctx) => {
+    return ctx.mount;
+  },
+  decorators: [
+    (Story) => (
+      <div className="min-w-[500px]">
+        <Story />
+      </div>
+    ),
+  ],
+};
+
+export const Multiple: Story = {
+  args: {
+    type: 'multiple',
+  },
+  argTypes: {
+    type: {
+      options: ['single', 'multiple'],
+      control: { type: 'select' },
+    },
+    collapsible: {
+      control: { type: 'boolean' },
+      description: 'type : "single" 일 때만 사용 가능합니다.',
+      if: { arg: 'type', neq: 'multiple' },
+    },
+    asChild: {
+      description: 'true시 AccordionContent가 첫번째 자식 태그로 랜더링됩니다. (\\<Slot />)',
+      control: { type: 'boolean' },
+    },
+  },
+  mount: (ctx) => {
+    return ctx.mount;
+  },
+  decorators: [
+    (Story) => (
+      <div className="min-w-[500px]">
+        <Story />
+      </div>
+    ),
+  ],
 };
