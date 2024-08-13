@@ -40,3 +40,6 @@ yarn-error.log*
 
 # by-products
 scripts/git_commit_template
+
+# local files
+__*
